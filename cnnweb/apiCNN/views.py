@@ -13,7 +13,7 @@ import json
 from tensorflow import Graph, Session
 import tensorflow as tf
 import numpy as np
-from skimage.transform import resize
+#from skimage.transform import resize
 import matplotlib as plt
 
 #(x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
