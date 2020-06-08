@@ -11,3 +11,4 @@ pillow
 polls
 markdown
 django-filter
+matplotlib

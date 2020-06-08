@@ -61,10 +61,10 @@ def predictImage(request):
     with model_graph.as_default():
         with tf_session.as_default():
             predi=model.predict(x)
-
+    print("Prediccion",np.argmax(predi[1]))
     predictedLabel=labelInfo[str(np.argmax(predi[0]))]
     #predictedLabel= predicts(np.array( [x] ))
-    print("label prediccion",predictedLabel)
+    print("label prediccion",predictedLabel[0])
     context={'filePathName':filePathName,'predictedLabel':predictedLabel[1]}
     return render(request,'index.html',context) 
 
